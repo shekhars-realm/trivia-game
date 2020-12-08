@@ -1,0 +1,119 @@
+.containerHead {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* border-bottom: 2px solid; */
+    background: #3AAFA9;
+    color: white;
+    font-size: 25px;
+}
+
+.containerBody {
+        margin: 60px auto;
+    width: 700px;
+    color: white;
+    border: 2px solid #3AAFA9;
+    border-radius: 9px;
+    min-height: 200px;
+}
+
+.bodyTop {
+    padding: 5px;
+    background: #3AAFA9;
+    border-radius: 4px 4px 0px 0px;
+    font-weight: bold;
+}
+
+.roundBar {
+
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.loader {
+      border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid #3AAFA9;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin: 30px auto;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modalContent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    background: lightgrey;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.restartBtn {
+    height: 30px;
+    background: green;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.startBtn {
+    height: 40px;
+    width: 80px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #3AAFA9;
+    color: white;
+    font-weight: bold;
+}
+
+.startBtn:hover {
+    background-color: black;
+    border: 1px solid white;
+}
+
+span {
+    font-size: 20px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
